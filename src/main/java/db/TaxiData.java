@@ -37,6 +37,7 @@ public class TaxiData {
 	protected void setClinetOrder(int cL, int cO) {
 		this.clientLocation.set(cL);
 		this.clinetOrder.set(cO);
+		this.distance.set(0.0);
 		this.taxiProgresInterval.set( 1 / (Math.abs((double)getClientLocation() - (double)getTaxiLocation()) + Math.abs((double)getClientLocation() - (double)getClinetOrder())));
 	}
 

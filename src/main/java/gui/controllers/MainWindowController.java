@@ -40,10 +40,8 @@ public class MainWindowController {
 		this.allTaxisController = new AllTaxisController();
 		GuiScreens.ALL.getLoader().setController(this.allTaxisController);
 		GuiScreens.ALL.FXMLLoad();
-		this.noOfTaxisInput.setText("2");
 		setPane(GuiScreens.INITAL.getPane());
 		startSettings();
-		startButtonAction();
 	}
 	
 	private void startSettings() {
@@ -87,6 +85,7 @@ public class MainWindowController {
 		Engine.getInstance().resetEngine();
 		this.selectedTaxiLabel.setText("Restarted");
 		this.noOfTaxisInput.clear();
+		this.progressBar.setProgress(0.0);
 	}
 	
 	private void exitButtonAction() {
@@ -111,6 +110,7 @@ public class MainWindowController {
 		activeSendButton(false);
 		this.clientDestinationInput.clear();
 		this.clientLocationInput.clear();
+		this.progressBar.setProgress(0.0);
 	}
 	
 	public void refreshViewList() {
