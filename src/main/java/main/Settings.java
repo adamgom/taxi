@@ -5,7 +5,7 @@ public class Settings {
 	public static final String dbUrlEnd = "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 	public static final String dbUrl = "jdbc:mysql://localhost" + dbUrlEnd;
 	public static final String user = "root";
-	public static final String password = "7diablo7";
+	public static final String password = "abc";
 	public static final String dbNameSQL = "abc";
 	
 	public static final String MainWindowPaneFXML = "/fxml/MainWindowPane.fxml";
